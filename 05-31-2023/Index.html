@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2><center> <i> Profile </i></center></h2>
+
+<p id="demo"></p>
+    <center>
+    <img src="C:\Users\kokko\OneDrive\Desktop\HTML\VinayUi\05-31-2023\assets\WhatsApp Image 2023-05-31 at 7.05.31 PM.jpeg" alt="Vinay Avatar">
+    <h3> Vinay Kokkonda</h3>
+    <h5> The other details are displayed in the console</h5>
+</center>
+<style>
+    img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250Spx;
+}
+
+p {
+  margin: 0px auto;
+  text-align: center;
+}
+  </style>
+
+
+<script>
+// Create an object:
+const person = {
+  FirstName: "Vinay",
+  LastName: "Kokkonda",
+  Age: 24,
+  EyeColor: "black",
+  DOB:"04-13-1999",
+  Hobbies:["Driving", "movies", "Cooking", "Playing Sports"],
+  Phoneno:"2038235045",
+  Undergrad: "LPU",
+  University: "SHU",
+  Gender: "Male"
+};
+
+
+
+console.log(person);
+console.log(person.Hobbies[2]);
+
+
+document.getElementById("demo").innerHTML =  "My Least Fav Hobby is " +
+person.Hobbies[3];
+
+</script>
+
+        
